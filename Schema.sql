@@ -1,35 +1,38 @@
 create database product_schema;
 use product_schema;
 
-
+/*SQL Query for creating product_category Table*/
 create table product_category(
 	id int primary key,
-    name varchar(55),
-    description varchar(500),
-    created_at datetime,
-    modified_at datetime,
+    	name varchar(55),
+    	description varchar(500),
+    	created_at datetime,
+    	modified_at datetime,
 	delete_at datetime
 );
 
+/*SQL Query for creating product_inventoory Table*/
 create table product_inventory(
 	id int primary key,
-    quantity int,
-    created_at datetime,
+    	quantity int,
+    	created_at datetime,
 	modified_at datetime,
 	delete_at datetime
 );
 
+/*SQL Query for creating discount Table*/
 create table discount(
 	id int primary key,
-    name varchar(50),
-    description varchar(500),
-    discount_per decimal(10, 2),
-    active BIT,
-    created_at datetime,
+    	name varchar(50),
+    	description varchar(500),
+    	discount_per decimal(10, 2),
+    	active BIT,
+    	created_at datetime,
 	modified_at datetime,
 	delete_at datetime
 );
 
+/*SQL Query for creating product Table*/
 create table product(
 	id int primary key,
 	name varchar(80),
