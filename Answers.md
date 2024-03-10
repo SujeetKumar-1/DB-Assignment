@@ -1,2 +1,3 @@
 # 1. Explain the relationship between the "Product" and "Product_Category" entities from the above diagram.
 Ans: As per the given diagram, the relationship between Product and Product_Category is one-to-many relationship. Means- **one product category can have multiple products associated with it.** and **each product is associated with exactly one product category.**
+This relationship is usually implemented in a relational database using foreign keys. In the "Products" table, there will typically be a foreign key column referencing the primary key of the "Products_Category" table. This foreign key establishes the relationship between products and their respective categories.
