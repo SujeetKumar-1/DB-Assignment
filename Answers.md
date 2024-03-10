@@ -22,4 +22,5 @@ Here's how I can implement this in a relational database management system (RDBM
   ### modified_at datetime,
   ### deleted_at datetime
 ### )
-similarly i can create table for product category, product inventory and discount.
+
+## similarly I can create table for product category, product inventory and discount.
