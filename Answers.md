@@ -6,7 +6,7 @@ This relationship is usually implemented in a relational database using foreign 
 # 2. How could you ensure that each product in the "Product" table has a valid category assigned to it?
 Ans: To ensure that a valid category is specified for each product in the "Product" table, I can enforce a foreign key constraint between the "Product" table and the "Product_Category" table. This constraint ensures referential integrity by enforcing that every value in the foreign key column-"category_id" (which refers to the primary key of the product_category table) must exist in the referenced table.
 Here's how I can implement this in a relational database management system (RDBMS) like MySQL
-# Create Table product( **
+ **Create Table product( **
   **id int primary key,**
   **name varchar(80),**
   **desc varchar(500),**
